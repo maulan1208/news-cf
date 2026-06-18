@@ -12,7 +12,6 @@ from item import ItemCF
 
 BEHAVIOR_COLUMNS = ["impression_id", "user_id", "time", "history", "impressions"]
 
-
 # Parse dữ liệu
 def parse_history(value):
     return value.split() if isinstance(value, str) else []
@@ -26,7 +25,6 @@ def parse_impressions(value):
         labels.append(int(label))
     return candidates, labels
 
-
 # Các chỉ số xếp hạng 
 # labels: nhãn đúng/sai (1/0) của các tin sau khi đã sắp xếp theo điểm model.
 def mrr(labels):
@@ -35,7 +33,6 @@ def mrr(labels):
         if label == 1:
             return 1.0 / rank
     return 0.0
-
 
 def dcg(labels):
     return sum(label / np.log2(rank + 1) for rank, label in enumerate(labels, start=1))
@@ -141,7 +138,6 @@ def evaluate(limit=None, batch_size=config.EVAL_BATCH_SIZE, output="results.json
         save_results(output, results)
     return results
 
-
 def main():
     parser = argparse.ArgumentParser(description="Đánh giá ItemCF trên dev set")
     parser.add_argument("--limit", type=int, default=None,
@@ -153,7 +149,6 @@ def main():
     args = parser.parse_args()
 
     evaluate(limit=args.limit, batch_size=args.batch_size, output=args.output)
-
 
 if __name__ == "__main__":
     main()
