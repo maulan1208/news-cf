@@ -1,0 +1,80 @@
+{
+  "latest": {
+    "run_id": 5,
+    "created_at": "2026-06-17T16:51:51+07:00",
+    "num_impressions": 73152,
+    "limit": null,
+    "batch_size": 256,
+    "metrics": {
+      "auc": 0.5209352717068871,
+      "mrr": 0.2645010703483772,
+      "ndcg_5": 0.26748136439469183,
+      "ndcg_10": 0.3303857271086285
+    }
+  },
+  "runs": [
+    {
+      "run_id": 1,
+      "created_at": "2026-06-16T17:56:36+07:00",
+      "num_impressions": 73152,
+      "limit": null,
+      "batch_size": 256,
+      "device": "cuda",
+      "metrics": {
+        "mrr": 0.26086035360988635,
+        "ndcg_5": 0.2641370216697301,
+        "ndcg_10": 0.32755040873042096
+      }
+    },
+    {
+      "run_id": 2,
+      "created_at": "2026-06-17T14:46:12+07:00",
+      "num_impressions": 73152,
+      "limit": null,
+      "batch_size": 256,
+      "device": "cuda",
+      "metrics": {
+        "mrr": 0.26086035360988635,
+        "ndcg_5": 0.2641370216697301,
+        "ndcg_10": 0.32755040873042096
+      }
+    },
+    {
+      "run_id": 3,
+      "created_at": "2026-06-17T16:15:33+07:00",
+      "num_impressions": 73152,
+      "limit": null,
+      "batch_size": 256,
+      "metrics": {
+        "mrr": 0.2645010703483772,
+        "ndcg_5": 0.26748136439469183,
+        "ndcg_10": 0.3303857271086285
+      }
+    },
+    {
+      "run_id": 4,
+      "created_at": "2026-06-17T16:28:01+07:00",
+      "num_impressions": 73152,
+      "limit": null,
+      "batch_size": 256,
+      "metrics": {
+        "mrr": 0.2645010703483772,
+        "ndcg_5": 0.26748136439469183,
+        "ndcg_10": 0.3303857271086285
+      }
+    },
+    {
+      "run_id": 5,
+      "created_at": "2026-06-17T16:51:51+07:00",
+      "num_impressions": 73152,
+      "limit": null,
+      "batch_size": 256,
+      "metrics": {
+        "auc": 0.5209352717068871,
+        "mrr": 0.2645010703483772,
+        "ndcg_5": 0.26748136439469183,
+        "ndcg_10": 0.3303857271086285
+      }
+    }
+  ]
+}
